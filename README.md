@@ -1,15 +1,17 @@
 # AutoCoach AI — Python Agent 学习与求职项目
 
-> **当前唯一执行基准：V3.0 冻结版（2026-10-09）**。路线已确认；**尚未声称完成任何新版本功能**。
+> **当前唯一执行基准：V3.1 执行版（2026-10-10）**。路线已确认；**尚未声称完成任何新版本功能**。
 > 当前使用现有仓库地址，项目正式名称为 AutoCoach AI。
 
 ## 从这里开始
 
 **[原始学习资料入口（官方全书、实验、PDF 链接、面试资源）](docs/source-materials.md)**
 
+**[当前执行版 V3.1：Python 高频面经、FastAPI 与可量化验收](docs/autocoach-v3.1-execution.md)**
+
 **[逐 Commit 开发教程：需求、学习、设计、验收、小林 coding 面试题（C00–C14）](docs/autocoach-commit-playbook-v3.md)**
 
-**[AutoCoach AI · Agent Book × 小林 coding V3.0 冻结路线与 C00–C14 Commit 地图](docs/autocoach-v3-frozen.md)**
+**[原 V3.0 历史基线（现由 V3.1 修订）](docs/autocoach-v3-frozen.md)**
 
 以李博杰 [《深入理解 AI Agent：设计原理与工程实践》](https://github.com/bojieli/ai-agent-book) 为学习主线，**Python 从零实现可解释的 Agent Runtime**，贯穿汽车销售模拟培训场景；用小林 coding 的 Agent/RAG/工具调用面试题验证理解。
 
