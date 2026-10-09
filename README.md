@@ -5,6 +5,8 @@
 
 ## 从这里开始
 
+**[原始学习资料入口（官方全书、实验、PDF 链接、面试资源）](docs/source-materials.md)**
+
 **[逐 Commit 开发教程：需求、学习、设计、验收、小林 coding 面试题（C00–C14）](docs/autocoach-commit-playbook-v3.md)**
 
 **[AutoCoach AI · Agent Book × 小林 coding V3.0 冻结路线与 C00–C14 Commit 地图](docs/autocoach-v3-frozen.md)**
