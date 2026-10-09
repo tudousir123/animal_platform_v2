@@ -1,7 +1,7 @@
 # AutoCoach AI · Agent Book × 小林 coding 学习路线 V3.0（冻结版）
 
 > 冻结日期：2026-10-09。当前状态：**路线已确定，开发尚未验收**。
-> 当前仓库沿用历史名称 `animal_platform_v2`，**实际新项目业务名称为 AutoCoach AI**。暂不重命名仓库，避免链接和历史工作丢失。
+> 项目正式名称为 **AutoCoach AI**；当前沿用已有 GitHub 仓库地址。
 
 ## 目标与边界
 
@@ -70,7 +70,7 @@
 
 ## 第二阶段（不阻塞简历 V1）
 
-基于已经完成的 Python Agent 项目补 Go 服务端、HTTP/SSE、MySQL 事务/索引、Redis 缓存/任务、并发和幂等、CI/Docker、Go 面试题。保留旧 [V2.2 地图](commit-map-v2.2.md) 作为可复用的工程化能力参考，但**不是当前必须按编号执行的任务清单**。
+基于已经完成的 Python Agent 项目补 Go 服务端、HTTP/SSE、MySQL 事务/索引、Redis 缓存/任务、并发和幂等、CI/Docker、Go 面试题。Go 后端强化将在简历 V1 完成后单独设计，不阻塞当前 C00–C14。
 
 ## 变更控制
 
