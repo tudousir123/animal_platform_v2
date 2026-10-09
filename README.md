@@ -5,6 +5,8 @@
 
 ## 从这里开始
 
+**[逐 Commit 开发教程：需求、学习、设计、验收、小林 coding 面试题（C00–C14）](docs/autocoach-commit-playbook-v3.md)**
+
 **[AutoCoach AI · Agent Book × 小林 coding V3.0 冻结路线与 C00–C14 Commit 地图](docs/autocoach-v3-frozen.md)**
 
 以李博杰 [《深入理解 AI Agent：设计原理与工程实践》](https://github.com/bojieli/ai-agent-book) 为学习主线，**Python 从零实现可解释的 Agent Runtime**，贯穿汽车销售模拟培训场景；用小林 coding 的 Agent/RAG/工具调用面试题验证理解。
