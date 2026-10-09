@@ -1,38 +1,50 @@
-# AutoCoach AI — Python Agent 学习与求职项目
+# SalesPilot Learning Edition — 新能源汽车 AI 销售助手
 
-> **当前唯一执行基准：V3.1 执行版（2026-10-10）**。路线已确认；**尚未声称完成任何新版本功能**。
-> 当前使用现有仓库地址，项目正式名称为 AutoCoach AI。
+> **当前唯一执行路线：SalesPilot Learning Edition V1.0**。历史 AutoCoach 学习路线已撤销。目标：**AI Agent 应用开发**，毕业任务优先。
+>
+> 当前状态：课程设计已更新，**C00–C13 尚未实现及验收**。
 
-## 从这里开始
+## 开始学习
 
-**[原始学习资料入口（官方全书、实验、PDF 链接、面试资源）](docs/source-materials.md)**
+**[查看新版完整开发课程：需求、教材实验、独立设计、测试、Eval、Python/Agent 面试题](docs/salespilot-learning-roadmap.md)**
 
-**[当前执行版 V3.1：Python 高频面经、FastAPI 与可量化验收](docs/autocoach-v3.1-execution.md)**
+**[学习资料索引（AI Agent Book + AgentGuide + 小林 coding + SalesPilot）](docs/source-materials.md)**
 
-**[逐 Commit 开发教程：需求、学习、设计、验收、小林 coding 面试题（C00–C14）](docs/autocoach-commit-playbook-v3.md)**
+## 四个资源分别做什么？
 
-**[原 V3.0 历史基线（现由 V3.1 修订）](docs/autocoach-v3-frozen.md)**
+| 项目 | 职责 |
+|---|---|
+| [SalesPilot 原项目](https://github.com/FelixDemon1/SalesPilot) | **业务场景和目标架构**：新能源汽车销售问答、企业 RAG、Web 搜索、深度研究、FastAPI、SSE |
+| [李博杰 AI Agent Book](https://github.com/bojieli/ai-agent-book) | **唯一 Agent 理论主教材 + 官方实验**；本仓库 `references/ai-agent-book` 为固定版本 submodule |
+| [AgentGuide](https://github.com/adongwanai/AgentGuide) | 工程验收、安全、Trace、项目交付与求职指南 |
+| [小林 coding](https://xiaolincoding.com/) | Python、Agent/RAG、API、数据库与系统设计面试训练 |
 
-以李博杰 [《深入理解 AI Agent：设计原理与工程实践》](https://github.com/bojieli/ai-agent-book) 为学习主线，**Python 从零实现可解释的 Agent Runtime**，贯穿汽车销售模拟培训场景；用小林 coding 的 Agent/RAG/工具调用面试题验证理解。
+**注意**：本项目是根据 SalesPilot 的业务规格进行原创学习实现，不是原作者源码的镜像或改名版本。原 SalesPilot 仓库未检测到明确顶层开源许可证，因此目前不复制其代码。
 
-### 开发顺序
+## 产品目标
 
-1. **Phase 1 / Python Agent**：C00–C14 → Agent Loop、Context、Tools、Memory、RAG、MCP、Eval、Trace → 可运行 AutoCoach Demo、面试复盘、**简历 V1**。
-2. **Phase 2 / 后端强化（V1之后）**：Go、HTTP/SSE、MySQL、Redis、并发、部署、Go 基础面试 → **简历 V2**。
+用户提出新能源车型参数、竞品、政策和销售沟通问题。系统使用企业文档检索（RAG）、实时网页搜索、可控 Agent 深度研究，给出带来源的答复，并通过 FastAPI + SSE 提供服务。真实市场资料注明时间与来源，初期用明确标注的演示车型数据。
 
-每个 Commit：**需求 → 教材/官方实验 → 自主设计 → 实现 → 测试/评测 → 小林 coding 题目追问 → 提交**。无证据不标完成。
+## 固定学习闭环
 
-### 第一阶段不做
+**需求 → 原书正文与实验 → 自己画设计 → 编码 → pytest/Mock → 真实模型与搜索 → Eval/Trace → 小林题库答辩 → Git 提交**。
 
-不提前转 Go，不双线开发两个完整平台；不强推 LangGraph、复杂 Multi-Agent、语音/3D/云服务、微调与复杂前端；不编造评估结果。不影响毕业论文优先级。
+不做原 AutoCoach 的客户扮演、培训评分、角色模拟。第一阶段专注完成可靠的 Python Agent 应用，后续按岗位需要延展 Go/MySQL/Redis 等。
 
-### 当前进度
+## 当前进度
 
-- [x] V3.0 路线和学习顺序确定
-- [ ] C00 Python 环境、模型连接、最小 CLI 和测试
-- [ ] C01–C14 的代码/实验证据
-- [ ] 简历 V1
+- [x] 完成项目切换与课程设计
+- [x] 关联原书与实验资料
+- [ ] C00 最小模型请求与工程化测试
+- [ ] C01–C13 代码、评测和可演示服务
+- [ ] 简历 V1 与独立面试答辩
 
-## 开始开发
+## 获取原书实验
 
-下一次直接从 [V3.0 Commit C00](docs/autocoach-v3-frozen.md) 开始。当前所有 C00–C14 实现任务均未完成，后续只添加 AutoCoach AI 相关代码、测试与实验记录。
+```bash
+git clone --recurse-submodules https://github.com/tudousir123/animal_platform_v2.git
+# 已克隆用户：
+git submodule update --init --recursive
+```
+
+先阅读 [C00 任务](docs/salespilot-learning-roadmap.md)，不要提前安装 PostgreSQL、Elasticsearch 与 OCR 全家桶。
