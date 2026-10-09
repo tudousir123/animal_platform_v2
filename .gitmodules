@@ -1,0 +1,3 @@
+[submodule "references/ai-agent-book"]
+	path = references/ai-agent-book
+	url = https://github.com/bojieli/ai-agent-book.git
