@@ -1,30 +1,32 @@
-# SalesPilot Learning Edition 学习资料索引
+# 资料入口与使用许可
 
-## 四个主入口
+| 资料 | 官方入口 | 使用方式 |
+|---|---|---|
+| 原业务项目 SalesPilot | https://github.com/FelixDemon1/SalesPilot | 查业务需求与现有问题；许可不明确，不拷贝源码 |
+| 李博杰 AI Agent Book | https://github.com/bojieli/ai-agent-book | 主教材、官方源码实验；已通过 Git submodule 固定到 `dbc046e` |
+| 官方图书 PDF | https://github.com/bojieli/ai-agent-book/releases/download/latest/AI-Agents-in-Depth-zh-CN.pdf | **直接链接，未上传 PDF 文件** |
+| AgentGuide | https://github.com/adongwanai/AgentGuide | 工程、安全、评测、交付指南 |
+| AgentGuide Harness | https://github.com/adongwanai/AgentGuide/blob/main/docs/02-tech-stack/27-agent-harness-engineering.md | 第一次只学 Model+Loop+Tools |
+| AgentGuide 项目交付 | https://github.com/adongwanai/AgentGuide/blob/main/docs/03-practice/05-ship-agent-project.md | Spec、Eval、失败归因、可复现 |
+| 小林 Python 118 | https://xiaolincoding.com/interview/python.html | 按里程碑选取原题，不平推118题 |
+| 小林 Agent 24 | https://xiaolinnote.com/ai/agent/ | 真实题目目录 |
+| 小林 RAG | https://xiaolinnote.com/ai/rag/ | 真实题目目录 |
+| 小林工具/MCP | https://xiaolinnote.com/ai/tools/ | 真实题目目录 |
+| FastAPI 官方 | https://fastapi.tiangolo.com/tutorial/ | M1 极简 API / M4 服务化 |
+| Python asyncio | https://docs.python.org/3/library/asyncio.html | M3/M4 I/O与取消 |
 
-1. **SalesPilot 业务与代码参考（不复制源码）**：https://github.com/FelixDemon1/SalesPilot
-   - 后端入口：`backend/app/app_main.py`
-   - 业务 API：`backend/app/router/ai_serarch_rt.py`
-   - Agent 逻辑：`backend/app/service/agent/agent.py`
-   - RAG：`backend/app/service/core/rag/`；Web：`backend/app/service/web_search/`
-   - README 的待改进问题可作为工程验收反例，未独立验证不能声称已经修复
-2. **李博杰 AI Agent Book**：https://github.com/bojieli/ai-agent-book
-   - 本仓库已有 `references/ai-agent-book` Git submodule，含原书、章节和官方实验源码；需 `git submodule update --init --recursive`
-   - 官方 PDF：https://github.com/bojieli/ai-agent-book/releases/download/latest/AI-Agents-in-Depth-zh-CN.pdf （链接，**没有上传 PDF 文件**）
-   - 官方学习指导：https://github.com/bojieli/ai-agent-book/blob/main/docs/zh-CN/LEARNING.md
-3. **AgentGuide**：https://github.com/adongwanai/AgentGuide
-   - 求职项目交付：https://github.com/adongwanai/AgentGuide/blob/main/docs/03-practice/05-ship-agent-project.md
-   - Harness 工程：https://github.com/adongwanai/AgentGuide/blob/main/docs/02-tech-stack/27-agent-harness-engineering.md
-   - 项目总览：https://github.com/adongwanai/AgentGuide/tree/main/projects
-4. **小林 coding**：https://xiaolincoding.com/
-   - Python 面试：https://xiaolincoding.com/interview/python.html
-   - Agent/RAG/大模型工程面试内容：按各 Commit 现场核对题目来源和原题链接。
-   - 之前定位的用户资料包括 Python/Agent 索引，以及 Golang、MySQL、Redis、分布式、消息队列和系统设计 PDF。**尚未上传这些 PDF**。
+## 仓库里的书籍
 
-## 版权、隐私与复现
+```bash
+git clone --recurse-submodules https://github.com/tudousir123/animal_platform_v2.git
+# 已 clone：
+git submodule update --init --recursive
+```
 
-SalesPilot 当前 GitHub 仓库未提供明确的顶层 License；仅供阅读、对照与独立实现，不将源码直接复制到本学习项目。AI Agent Book 原仓库以 Apache-2.0 提供，在本仓库以 submodule 引用。面试题 PDF 暂不重新公开分发。任何供应商 API Key 均不能放进 Git。
+书籍实验实际路径位于 `references/ai-agent-book/`。因锁定版本不同，上游最新 README 中的特定模型名可能更新；执行时优先核对本地固定版。
 
-**仓库目前仍是 Public（按 GitHub API 实际查询）**，改为 Private 后才讨论个人 PDF 的仓库内备份，并仍需遵守文件权利人的使用许可。
+## 用户已有的面经 PDF（定位了文件，未上传）
 
-学习资料以链接为主，真正完成的代码与评测结果另放 `src/`、`tests/`、`eval/`。
+此前上传的资料：小林Coding Agent面试题官方索引_V2.2、Golang、MySQL、Redis、系统设计、消息队列、分布式 PDF。Agent索引的2页已读，Go PDF首页已读；其他大型文件尚未全部逐页审核。Python118、Agent24和RAG/Tools专题已经从官方线上目录核查。
+
+GitHub API 当前显示仓库仍是 **Public**，第三方面试 PDF 不向该仓库公开分发；版权使用边界独立于仓库是否 Private。
