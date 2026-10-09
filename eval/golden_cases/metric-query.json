@@ -1,0 +1,17 @@
+{
+  "id": "G-001",
+  "status": "draft_not_executed",
+  "fixture": "mock_pending",
+  "intent": "查询实验或视频已有行为指标",
+  "user_request": "请查询实验 EXP001 的水迷宫逃避潜伏期指标，并注明数据来源。",
+  "tool_plan_draft": [
+    "get_experiment_info",
+    "get_behavior_metrics"
+  ],
+  "acceptance_invariants": [
+    "must_have_observed_tool_execution",
+    "must_not_invent_metric_values",
+    "must_reference_source_if_value_reported"
+  ],
+  "notes": "名称和参数 Schema 待 A1/A2 设计确认，当前无真实数值与结果。"
+}

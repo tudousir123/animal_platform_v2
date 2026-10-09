@@ -1,28 +1,41 @@
 # Animal Platform V2 — Agent Runtime
 
-> **项目状态：规划阶段 / C00 尚未开始。**
+> 状态：**学习与开发准备就绪；首个 Go 实现尚未开始**（更新于 2026-10-09）。
+> 下一次开发：**2026-10-10，从基础契约与 Golden Case 开始**。
 
-本仓库用于以真实动物行为分析场景为基础，从零构建并理解一个可验证的 **Go Agent Runtime**。开发路线采用经过 JD 与牛客面经定性调研后的 **V2.2 冻结执行版**。
+这是以真实动物行为分析问题为业务背景的求职导向工程项目，目标是理解、设计、实现和验证 Agent 系统，而不只是调用现成框架。
 
-## 项目目标
+## 当前执行路线（唯一入口）
 
-- **主线**：Go + Pi-inspired Agent Runtime；先贯通 Model → Tool → Agent Loop，再扩展 Context、Session/Memory、RAG/MCP、可靠性及后端工程。
-- **业务场景**：接入已有动物行为分析工具与研究结果；真实接口未就绪时明确使用 Mock，不编造数据。
-- **面试能力**：每个 Commit 具备需求、定向学习、设计取舍、测试验收、面经复盘和可讲解证据。
-- **边界**：暂不做完整 Multi-Agent、第二套 Python 平台、Kubernetes/Kafka、无依据的性能宣传。优先保证毕业任务进度。
+- **[最小可就业能力路线](docs/roadmap-minimum-employment.md)**：目标岗位、能力门槛、阶段与停止条件；任务/Commit **不固定数量**。
+- **[学习—设计—开发—验收工作流与资源索引](docs/learning-playbook.md)**：每张任务卡该看什么、写什么、怎么证明会了。
+- **[2026-10-10 开发任务书](docs/first-session-2026-10-10.md)**：明天打开即可执行。
+- **[面试最小知识集](docs/interview-core.md)**：Agent / RAG / Go / MySQL / Redis / Python。
+- **[首批 Golden Case 草案](eval/golden_cases/README.md)**：评测从第一阶段启动，不等全部开发完才评测。
 
-## 路线图
+原来的 **[V2.2 / C00–C23 Commit Map](docs/commit-map-v2.2.md)** 完整保留为历史参考；**不再以完成 24 个固定 Commit 作为就业前置条件**。
 
-**[查看完整 C00–C23 Commit Map（V2.2）](docs/commit-map-v2.2.md)**
+## 核心技术取舍
 
-| 里程碑 | 内容 | 交付 |
-|---|---|---|
-| **C04 / M1** | Agent 最小纵向链路 | 可复现 CLI Demo + Trace + Golden Cases |
-| **C13 / M2** | Context、工具、可靠性与权限 | 具备初步投递基础，可解释故障与设计取舍 |
-| **C23 / M3** | 服务化、评测、性能与工程交付 | CI + Docker + Eval + Benchmark + 项目作品集 |
+**必学 Go**：主项目使用 Go 独立实现 Agent Runtime（Model、Tool、Loop、Context、测试、后端工程）。  
+**必学 Python Agent Runtime**：单独做有验收的 asyncio / typing / pytest / LangGraph 小型实现，与 Go **共用业务场景和评测案例**；不维护两个同等规模的平台。
 
-> 默认执行 V2.2，不因为一篇新 JD、框架趋势或单条面经而推倒重来；确有证据的改动先记录决策，再修改。
+核心能力：**Agent Loop + Tool Calling + Agent Evaluation + RAG/RAG Evaluation**。  
+就业基础：**Go/Python、HTTP、MySQL、Redis、Git/Linux、必要的测试与调试**。  
+进阶按真实需求：MCP、Session/Memory、权限、可靠性、Trace、服务化、异步任务；不为了凑技术栈提前堆组件。
 
-## 下一步
+**暂不做**：独立 LeetCode 刷题计划、复杂 Multi-Agent、Kubernetes/Kafka 集群、不需要的视觉算法重训、没有真实数据的性能指标。
 
-从 **C00 项目契约与工程骨架** 开始。当前仓库仅初始化路线文档，尚不宣称实现任何功能或通过任何测试。
+## 业务场景与真实性
+
+1. 按实验/视频 ID 查询**已有**小鼠水迷宫指标，并注明来源。
+2. 比较 AD / sham / 药物处理组的**已有**行为指标，不伪造统计显著性。
+3. 根据实验范式手册和已有记录回答问题，证据不足时明确说明。
+
+视觉推理服务作为外部业务工具；初期 Mock 明确标记，后续有可用接口才接真实数据。
+
+## 开始开发
+
+阅读 [明天的任务书](docs/first-session-2026-10-10.md)。每个任务执行同一闭环：**需求 → 指定资料 → 独立设计 → 编码 → 测试/评测 → 面试复盘 → Git 提交**。
+
+不承诺当前有可编译的 Go 项目，不宣称已经完成 Eval、RAG 或任何业务 API。毕业论文时间为优先边界。

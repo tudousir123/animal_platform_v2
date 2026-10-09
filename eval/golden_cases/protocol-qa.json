@@ -1,0 +1,16 @@
+{
+  "id": "G-003",
+  "status": "draft_not_executed",
+  "fixture": "mock_pending",
+  "intent": "实验范式手册知识问答",
+  "user_request": "根据现有实验手册解释水迷宫的典型测试流程，并注明来源；没有资料的步骤请明确说明。",
+  "tool_plan_draft": [
+    "retrieve_protocol_document"
+  ],
+  "acceptance_invariants": [
+    "must_cite_source_for_document_claims",
+    "must_disclose_missing_evidence",
+    "must_not_invent_protocol_steps"
+  ],
+  "notes": "RAG 工具/文档尚未建立，该案例首先用来定义预期行为。"
+}
