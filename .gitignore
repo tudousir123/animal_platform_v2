@@ -1,24 +1,37 @@
-# Local development / secrets
+# Secrets and private configuration
 .env
 .env.*
 !.env.example
 *.key
 *.pem
+*.p12
 
-# Go build artifacts
-/bin/
-/dist/
-*.test
-*.out
-coverage/
+# Python / testing
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Local databases, user uploads and logs
+*.db
+*.sqlite
+*.sqlite3
+data/private/
+data/raw/
+eval/results/local/
+logs/
+*.log
+.cache/
 
 # OS / IDE
 .DS_Store
 .idea/
 .vscode/
-
-# Python practice (future)
-/.venv/
-__pycache__/
-.pytest_cache/
-*.pyc
