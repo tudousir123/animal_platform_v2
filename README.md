@@ -1,7 +1,7 @@
 # AutoCoach AI — Python Agent 学习与求职项目
 
 > **当前唯一执行基准：V3.0 冻结版（2026-10-09）**。路线已确认；**尚未声称完成任何新版本功能**。
-> 仓库历史名 `animal_platform_v2` 暂保留，不代表当前业务主题仍是动物行为分析。
+> 当前使用现有仓库地址，项目正式名称为 AutoCoach AI。
 
 ## 从这里开始
 
@@ -27,15 +27,6 @@
 - [ ] C01–C14 的代码/实验证据
 - [ ] 简历 V1
 
-## 历史文档（保留但不再是当前任务）
+## 开始开发
 
-原仓库路线以 **Go + 动物行为分析** 为主线，现已被此次明确决策取代。下列文档保留供核对和以后后端阶段复用，**不要据此开始 Go 开发**：
-
-- [V2.2 C00–C23 地图](docs/commit-map-v2.2.md)
-- [旧最小可就业路线](docs/roadmap-minimum-employment.md)
-- [旧学习手册](docs/learning-playbook.md)
-- [旧首次开发任务书](docs/first-session-2026-10-10.md)
-- [旧面试知识集](docs/interview-core.md)
-- [旧动物行为 Golden Cases](eval/golden_cases/README.md)
-
-下一次开发请直接阅读 [V3.0 冻结路线](docs/autocoach-v3-frozen.md) 并从 **C00** 开始。
+下一次直接从 [V3.0 Commit C00](docs/autocoach-v3-frozen.md) 开始。当前所有 C00–C14 实现任务均未完成，后续只添加 AutoCoach AI 相关代码、测试与实验记录。
