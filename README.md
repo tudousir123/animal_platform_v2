@@ -7,10 +7,9 @@
 1. [需求和产品规格](docs/01-product-spec.md)：究竟做什么、什么不做、具体成功案例。
 2. [四套资料的源码审计与选材结论](docs/02-source-audit.md)：原项目已核实问题与学习边界。
 3. [六个里程碑学习路线](docs/03-learning-roadmap.md)：每一阶段的阅读、原版实验、自主设计、实现与数据验收。
-4. [执行方法与证据标准](docs/04-execution-playbook.md)：如何拆真实 Commit、如何避免 AI 代写、如何验收。
+4. [唯一实操与验收协议](docs/07-design-guided-learning.md)：All-in-One 学习、CS190 式评审、Python 实现、AI 辅助边界与双重验收。
 5. [小林 coding 原题映射](docs/05-interview-map.md)：Python 118 题、Agent 24 题及 RAG/Tools 精选，真实原题链接。
 6. [学习进度](docs/progress.md)：真实代码、实验及掌握程度分开记账。
-7. [设计驱动的 All-in-One 学习协议](docs/07-design-guided-learning.md)：AI Agent Book + Pi 源码 +《软件设计的哲学》/CS190 + 小林 Coding；不改变 M0–M5。
 
 **从 M0 的业务案例与 M1 的最小 Agent Tool Loop 开始；不要先搭复杂 RAG、Elasticsearch 或 React。当前以 Python 实现核心 Runtime 和业务；Go 后期按需补充，不作为 M0–M5 阻塞项。**
 
