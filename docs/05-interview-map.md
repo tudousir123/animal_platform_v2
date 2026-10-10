@@ -1,5 +1,7 @@
 # 小林 coding 真实面试题映射（按里程碑）
 
+> **现行使用方式（2026-10-11）**：此表仍保留已整理的真实题目来源与知识映射；**当前按 Lab Agent 1.0.0 的视频与源码进度挑选对应题**，不再按 SalesPilot M0–M5 强制刷题。M0–M5 列属于未来迁移阶段的参考，面经为学习验收而非代替实践。
+
 **资料核对**：
 - [Python 官方118题目录](https://xiaolincoding.com/interview/python.html)，包含 12 类；题号采用站内原编号。
 - [Agent 官方24题](https://xiaolinnote.com/ai/agent/)。
