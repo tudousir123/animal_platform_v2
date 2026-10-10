@@ -9,16 +9,19 @@
 3. [六个里程碑学习路线](docs/03-learning-roadmap.md)：每一阶段的阅读、原版实验、自主设计、实现与数据验收。
 4. [执行方法与证据标准](docs/04-execution-playbook.md)：如何拆真实 Commit、如何避免 AI 代写、如何验收。
 5. [小林 coding 原题映射](docs/05-interview-map.md)：Python 118 题、Agent 24 题及 RAG/Tools 精选，真实原题链接。
-6. [学习进度](docs/progress.md)：目前代码与真实测量均尚未开始。
+6. [学习进度](docs/progress.md)：真实代码、实验及掌握程度分开记账。
+7. [设计驱动的 All-in-One 学习协议](docs/07-design-guided-learning.md)：AI Agent Book + Pi 源码 +《软件设计的哲学》/CS190 + 小林 Coding；不改变 M0–M5。
 
-**从 M0 的业务案例与 M1 的最小 Agent Tool Loop 开始；不要先搭复杂 RAG、Elasticsearch 或 React。**
+**从 M0 的业务案例与 M1 的最小 Agent Tool Loop 开始；不要先搭复杂 RAG、Elasticsearch 或 React。当前以 Python 实现核心 Runtime 和业务；Go 后期按需补充，不作为 M0–M5 阻塞项。**
 
-## 四种资源，四种分工
+## 学习资源各司其职
 
 | 资源 | 作用 |
 |---|---|
 | [FelixDemon1/SalesPilot](https://github.com/FelixDemon1/SalesPilot) | **业务参照**：新能源车销售辅助、RAG、实时 Web Search、深度研究、FastAPI/SSE；不直接移植原代码 |
-| [AI Agent Book](https://github.com/bojieli/ai-agent-book) | **唯一 Agent 理论主教材和官方可运行实验**，已作为 `references/ai-agent-book` 子模块引用 |
+| [AI Agent Book](https://github.com/bojieli/ai-agent-book) | **Agent 原理主教材和官方实验**，已作为 `references/ai-agent-book` 子模块引用 |
+| [Pi 源码](https://github.com/badlogic/pi-mono) | **成熟 Agent Runtime 实现对照**：按具体任务检查工具调用与状态/错误边界，不复制实现或臆测版本 |
+| [《软件设计的哲学》/CS190](https://web.stanford.edu/~ouster/cs190-winter24/) | **软件设计原则与审查方法**：深模块、信息隐藏、管理复杂性；自己设计、Review、改进 |
 | [AgentGuide](https://github.com/adongwanai/AgentGuide) | **工程审查与求职指南**：Harness、权限、Trace、Eval、故障归因、作品集 |
 | [小林 coding](https://xiaolincoding.com/) | **闭卷面试训练**：Python、Agent、RAG、Tools、系统设计及需要时的数据库基础 |
 
